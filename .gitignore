@@ -1,0 +1,5 @@
+*~
+bundle/
+*.swp
+autoload/
+plugged/

@@ -1,0 +1,32 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin()
+Plug 'mhinz/vim-startify'
+Plug 'Gundo'
+call plug#end()
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+filetype plugin indent on
+syntax on
+set encoding=utf-8
+set tabstop=4
+set softtabstop=4
+set expandtab
+set number
+set showcmd
+set wildmenu
+set showmatch
+set incsearch
+set hlsearch
+let mapleader=","
+nnoremap <leader><space> :nohlsearch<CR>
+inoremap jk <esc>
+nnoremap gV `[v`]
+nnoremap <leader>u ::GundoToggle<CR>
+nnoremap <leader>s :mksession<CR>
+" CtrlP settings
+"let g:ctrlp_match_window = 'bottom,order:ttb'
+"let g:ctrlp_switch_buffer = 0
+"let g:ctrlp_working_path_mode = 0
+"let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
